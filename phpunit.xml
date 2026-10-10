@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         colors="true"
+         failOnDeprecation="true"
+         failOnNotice="true"
+         failOnWarning="true"
+         >
+    <php>
+        <!-- RuleTestCase builds PHPStan's DI container in-process and needs more than PHP's default -->
+        <ini name="memory_limit" value="512M"/>
+    </php>
+    <testsuites>
+        <testsuite name="rules">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

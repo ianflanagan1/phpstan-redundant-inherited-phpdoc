@@ -1,0 +1,32 @@
+{
+    "preset": "psr12",
+    "notPath": [
+        "tests/data"
+    ],
+    "rules": {
+        "declare_strict_types": true,
+        "protected_to_private": true,
+        "ordered_imports": {
+            "sort_algorithm": "alpha",
+            "imports_order": [
+                "const",
+                "class",
+                "function"
+            ]
+        },
+        "nullable_type_declaration_for_default_null_value": true,
+        "single_quote": true,
+        "new_expression_parentheses": true,
+        "get_class_to_class_keyword": true,
+        "modernize_types_casting": true,
+        "phpdoc_var_without_name": true,
+        "global_namespace_import": {
+            "import_classes": true,
+            "import_constants": false,
+            "import_functions": false
+        },
+        "fully_qualified_strict_types": {
+            "import_symbols": true
+        }
+    }
+}

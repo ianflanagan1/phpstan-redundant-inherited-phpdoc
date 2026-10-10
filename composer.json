@@ -1,0 +1,43 @@
+{
+    "name": "ianflanagan1/phpstan-redundant-inherited-phpdoc",
+    "description": "A PHPStan rule that reports PHPDoc on an overriding method that repeats what it already inherits from the parent method, and descriptions that belong on the parent.",
+    "type": "phpstan-extension",
+    "license": "MIT",
+    "keywords": ["phpstan", "phpstan-extension", "phpstan-rule", "static analysis"],
+    "authors": [
+        {
+            "name": "Ian Flanagan"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "phpstan/phpstan": "^2.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.32",
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "IanFlanagan\\PhpstanRules\\RedundantInheritedPhpdoc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IanFlanagan\\PhpstanRules\\RedundantInheritedPhpdoc\\Tests\\": "tests/"
+        },
+        "classmap": [
+            "tests/data/"
+        ]
+    },
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "rules.neon"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

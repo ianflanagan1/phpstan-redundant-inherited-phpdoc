@@ -1,0 +1,12 @@
+includes:
+    - rules.neon
+
+parameters:
+    level: 9
+    checkMissingOverrideMethodAttribute: true
+    paths:
+        - src
+        - tests
+    excludePaths:
+        # Fixtures for the rule tests, which break the rules on purpose
+        - tests/data
